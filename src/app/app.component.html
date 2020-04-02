@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="row">
+      <form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm.value)" class="form-control">
+        <label for="sku">SKU</label>
+        <input type="text" name="sku" [formControl]="myForm.controls['sku']">
+
+        <button class="button btn btn-primary" type="submit">Submit</button>
+      </form>
+    </div>
+</div>
+
